@@ -1,0 +1,100 @@
+[debug] [2023-09-29T12:25:51.372Z] ----------------------------------------------------------------------
+[debug] [2023-09-29T12:25:51.376Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-09-29T12:25:51.376Z] CLI Version:   12.6.0
+[debug] [2023-09-29T12:25:51.376Z] Platform:      win32
+[debug] [2023-09-29T12:25:51.377Z] Node Version:  v18.17.0
+[debug] [2023-09-29T12:25:51.378Z] Time:          Fri Sep 29 2023 17:55:51 GMT+0530 (India Standard Time)
+[debug] [2023-09-29T12:25:51.378Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-09-29T12:25:51.391Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-09-29T12:25:51.391Z] > authorizing via signed-in user (shitalsupekar138@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DELL\React_Apps\amazon-clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-09-29T12:33:22.566Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-09-29T12:33:23.501Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-09-29T12:33:23.501Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project challenge-dea9a (Amazon-Challenge) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-09-29T12:33:27.619Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-09-29T12:33:27.620Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/challenge-dea9a
+[debug] [2023-09-29T12:33:29.572Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com 200
+[debug] [2023-09-29T12:33:29.572Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com [omitted]
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2023-09-29T12:33:29.574Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com:enable [none]
+[debug] [2023-09-29T12:33:29.575Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com:enable x-goog-quota-user=projects/challenge-dea9a
+[debug] [2023-09-29T12:33:31.631Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com:enable 200
+[debug] [2023-09-29T12:33:31.632Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com:enable [omitted]
+[debug] [2023-09-29T12:33:41.635Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-09-29T12:33:41.636Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/challenge-dea9a
+[debug] [2023-09-29T12:33:43.530Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com 200
+[debug] [2023-09-29T12:33:43.530Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/challenge-dea9a/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-09-29T12:33:43.539Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/challenge-dea9a [none]
+[debug] [2023-09-29T12:33:43.999Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/challenge-dea9a 200
+[debug] [2023-09-29T12:33:43.999Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/challenge-dea9a {"projectId":"challenge-dea9a","projectNumber":"396680774395","displayName":"Amazon-Challenge","name":"projects/challenge-dea9a","resources":{"hostingSite":"challenge-dea9a"},"state":"ACTIVE","etag":"1_7930e8eb-3150-4d94-918f-42e237a6c76b"}
+[debug] [2023-09-29T12:34:09.531Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/challenge-dea9a/locations/us-central1/instances databaseId=challenge-dea9a-default-rtdb&validateOnly=true
+[debug] [2023-09-29T12:34:09.532Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/challenge-dea9a/locations/us-central1/instances {"type":"default_database"}
+[debug] [2023-09-29T12:34:13.563Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/challenge-dea9a/locations/us-central1/instances 200
+[debug] [2023-09-29T12:34:13.563Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/challenge-dea9a/locations/us-central1/instances {"name":"projects/396680774395/locations/us-central1/instances/challenge-dea9a-default-rtdb","project":"projects/396680774395","databaseUrl":"https://challenge-dea9a-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-09-29T12:34:13.565Z] >>> [apiv2][query] POST https://firebasedatabase.googleapis.com/v1beta/projects/challenge-dea9a/locations/us-central1/instances databaseId=challenge-dea9a-default-rtdb
+[debug] [2023-09-29T12:34:13.566Z] >>> [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/challenge-dea9a/locations/us-central1/instances {"type":"default_database"}
+[debug] [2023-09-29T12:34:15.777Z] <<< [apiv2][status] POST https://firebasedatabase.googleapis.com/v1beta/projects/challenge-dea9a/locations/us-central1/instances 200
+[debug] [2023-09-29T12:34:15.777Z] <<< [apiv2][body] POST https://firebasedatabase.googleapis.com/v1beta/projects/challenge-dea9a/locations/us-central1/instances {"name":"projects/396680774395/locations/us-central1/instances/challenge-dea9a-default-rtdb","project":"projects/396680774395","databaseUrl":"https://challenge-dea9a-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-09-29T12:35:01.230Z] >>> [apiv2][query] GET https://challenge-dea9a-default-rtdb.firebaseio.com/.settings/rules.json [none]
+[debug] [2023-09-29T12:35:02.368Z] <<< [apiv2][status] GET https://challenge-dea9a-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2023-09-29T12:35:02.368Z] <<< [apiv2][body] GET https://challenge-dea9a-default-rtdb.firebaseio.com/.settings/rules.json [stream]
+[info] +  Database Rules for challenge-dea9a-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-09-29T12:37:08.573Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-09-29T12:37:08.676Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-09-29T12:37:08.676Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.4.0","browserURL":"https://www.gstatic.com/firebasejs/10.4.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.4.0/firebase.tgz"},"live":{"version":"10.4","browserURL":"https://www.gstatic.com/firebasejs/live/10.4/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.4/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.4.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.4.0/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.4.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.4.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.4.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.4.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.4.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.4.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.4.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\DELL\React_Apps\amazon-clone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=508957143&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-09-29T12:37:40.799Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-09-29T12:37:40.799Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-09-29T12:37:41.141Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-09-29T12:37:41.142Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-09-29T12:37:41.152Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-09-29T12:37:41.569Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-09-29T12:37:41.569Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"shitalsupekar","id":112576181,"node_id":"U_kgDOBrXGtQ","avatar_url":"https://avatars.githubusercontent.com/u/112576181?v=4","gravatar_id":"","url":"https://api.github.com/users/shitalsupekar","html_url":"https://github.com/shitalsupekar","followers_url":"https://api.github.com/users/shitalsupekar/followers","following_url":"https://api.github.com/users/shitalsupekar/following{/other_user}","gists_url":"https://api.github.com/users/shitalsupekar/gists{/gist_id}","starred_url":"https://api.github.com/users/shitalsupekar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/shitalsupekar/subscriptions","organizations_url":"https://api.github.com/users/shitalsupekar/orgs","repos_url":"https://api.github.com/users/shitalsupekar/repos","events_url":"https://api.github.com/users/shitalsupekar/events{/privacy}","received_events_url":"https://api.github.com/users/shitalsupekar/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":9,"public_gists":0,"followers":0,"following":0,"created_at":"2022-08-31T17:14:06Z","updated_at":"2023-09-29T12:37:23Z","private_gists":0,"total_private_repos":1,"owned_private_repos":1,"disk_usage":8248,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as shitalsupekar 
+[info] 
